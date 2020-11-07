@@ -102,7 +102,7 @@ RETURNS decimal(10,2)
 RETURN (preco * qnt);
 
 # D) Utilize a função fn_valor.
-SELECT fn_valor (Preco_Prod, Qtd_Prod) as "Valor em Estoque" 
+SELECT Marca, Modelo, fn_valor (Preco_Prod, Qtd_Prod) as "Valor em Estoque" 
 FROM Produtos;
 
 # E) Use a função fn_valor, para retornar o valor total do estoque da loja.
